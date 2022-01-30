@@ -1,5 +1,13 @@
 ﻿export default [
   {
+    path: '/',
+    layout: false,
+    icon: 'smile',
+    hideInMenu: true,
+    name: '首页',
+    component: './Home',
+  },
+  {
     path: '/user',
     layout: false,
     routes: [
@@ -47,10 +55,6 @@
     icon: 'table',
     path: '/list',
     component: './TableList',
-  },
-  {
-    path: '/',
-    redirect: '/welcome',
   },
   {
     component: './404',
